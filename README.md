@@ -51,3 +51,8 @@ Installation
 Contribution
 <p></p>
 <p></p>
+<ol>
+ <li>Validates user input to ensure it's a number and greater than 10.</li>
+ <li>Provides real-time validation feedback using JavaScript.</li>
+ <li>Styled with CSS for a clean and responsive design.</li>
+</ol>
