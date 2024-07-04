@@ -40,10 +40,9 @@ Installation
 <p></p>
 <p></p>
 <ol>
- <li>Clone the repository:
- 
+ <li>Clone the repository with the command 
  git clone https://github.com/your-username/your-repository.git
-
  </li>
-  <li>Navigate into the project directory:cd your-repository </li>
+  <li>Navigate into the project directory with the command 
+   cd your-repository </li>
 </ol>
