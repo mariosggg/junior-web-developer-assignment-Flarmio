@@ -31,7 +31,7 @@ Usage
 <p></p>
 <ol>
  <li>Include the HTML: Copy the HTML structure provided in index.html to your project.</li>
-  <li>Tea</li>
+  <li>Add CSS: Include the CSS styles from <style> tag or link to an external CSS file. </li>
   <li>Milk</li>
 </ol>
 
