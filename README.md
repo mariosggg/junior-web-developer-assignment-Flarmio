@@ -18,4 +18,4 @@ Table of Contents
 
 <p>Demo</p>
 
-You Can see A live demo here <a href="<a href="[url](https://mariosggg.github.io/junior-web-developer-assignment-Flarmio_marios_vardalachakis/)">Demo</a>">Here</a>
+You Can see A live demo <a href="https://mariosggg.github.io/junior-web-developer-assignment-Flarmio_marios_vardalachakis/">Here</a></li>
