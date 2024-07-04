@@ -17,7 +17,6 @@ Table of Contents
  
  <p></p>
 
-
- <b>and this is bold text</b>
+Deni
 
 You Can see A live demo <a href="https://mariosggg.github.io/junior-web-developer-assignment-Flarmio_marios_vardalachakis/">Here</a></li>
