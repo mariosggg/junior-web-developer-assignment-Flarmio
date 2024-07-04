@@ -45,4 +45,5 @@ Installation
  </li>
   <li>Navigate into the project directory with the command:
    cd your-repository </li>
+  <li>Open index.html in your web browser or integrate it into your existing project.
 </ol>
