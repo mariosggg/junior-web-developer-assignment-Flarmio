@@ -14,7 +14,7 @@ Demo
 You Can see A live demo <a href="https://mariosggg.github.io/junior-web-developer-assignment-Flarmio_marios_vardalachakis/">Here</a></li>
 
 <p></p>
-<p></p>
+<p></p
 Features
 <p></p>
 <p></p>
@@ -27,4 +27,11 @@ Features
 <p></p>
 <p></p>
 Usage
+<p></p>
+<p></p>
+<ol>
+ <li>Include the HTML: Copy the HTML structure provided in index.html to your project.</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
 
