@@ -1,4 +1,4 @@
-# junior-web-developer-assignment-Flarmio
+# junior-web-developer-assignment-Flarmio - Marios Vardalachakis
 
 # Description
 
