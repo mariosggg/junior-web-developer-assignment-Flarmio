@@ -16,7 +16,8 @@ You Can see A live demo <a href="https://mariosggg.github.io/junior-web-develope
 <p></p>
 <p></p>
 Features
-
+<p></p>
+<p></p>
 <ul>
    <li>Validates user input to ensure it's a number and greater than 10.</li>
    <li>Provides real-time validation feedback using JavaScript.</li>
