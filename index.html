@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Input Validation</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            width: 400px;
+            position: relative;
+        }
+        h1 {
+            color: #007bff;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%; /* Full width input */
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Ensure padding is included in width */
+        }
+        .error {
+            color: red;
+            display: none;
+            margin-bottom: 10px;
+        }
+        .button {
+    border: 2px solid #007bff; /* Blue border */
+    color: #007bff; /* Blue text color */
+    background-color: #ffffff; /* White background color */
+    padding: 12px 24px; /* Smaller padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 50%; /* Ensure button takes full width of container */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3; /* Darker blue border on hover */
+    color: #ffffff; /* White text color on hover */
+}
+
+    </style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Form</h1>
+        <form id="numberForm">
+            <label for="numberInput">Number</label>
+            <input type="number" id="numberInput" name="numberInput" placeholder="Please enter a number">
+            <div class="error" id="error">Please enter a number greater than 10.</div>
+            <div style="display: flex; justify-content: flex-end;">
+                <button class="button button4">Submit</button>
+
+            </div>
+        </form>
+    </div>
+    <script>
+        window.onload = function() {
+            const numberForm = document.getElementById('numberForm');
+            const numberInput = document.getElementById('numberInput');
+            const errorElement = document.getElementById('error');
+
+            numberForm.addEventListener('submit', function(event) {
+                const inputValue = parseFloat(numberInput.value);
+                if (!isNaN(inputValue) && inputValue <= 10) {
+                    errorElement.style.display = 'block';
+                    event.preventDefault();
+                } else {
+                    errorElement.style.display = 'none';
+                    alert('Form submitted successfully with number: ' + inputValue);
+                }
+            });
+
+            numberInput.addEventListener('input', function() {
+                const inputValue = parseFloat(this.value);
+                if (!isNaN(inputValue) && inputValue <= 10) {
+                    errorElement.style.display = 'block';
+                } else {
+                    errorElement.style.display = 'none';
+                }
+            });
+        };
+    </script>
+</body>
+</html>
