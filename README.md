@@ -52,10 +52,10 @@ Contribution
 <p></p>
 <p></p>
 <ol>
- <li>Validates user input to ensure it's a number and greater than 10.</li>
- <li>Provides real-time validation feedback using JavaScript.</li>
- <li>Styled with CSS for a clean and responsive design.</li>
- <li>Validates user input to ensure it's a number and greater than 10.</li>
- <li>Provides real-time validation feedback using JavaScript.</li>
- <li>Styled with CSS for a clean and responsive design.</li>
+ <li>Fork the repository.</li>
+ <li>Create a new branch (git checkout -b feature-branch).</li>
+ <li>Make your changes.</li>
+ <li>Commit your changes (git commit -am 'Add new feature').</li>
+ <li>Push to the branch (git push origin feature-branch).</li>
+ <li>Create a new Pull Request.</li>
 </ol>
