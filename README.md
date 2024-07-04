@@ -15,7 +15,7 @@ Table of Contents
  <li><a href="url">Contributing</li
  </ul>
 
-<p></p>
+
 Demo
 
 <p></p>
