@@ -7,7 +7,7 @@ This repository contains a simple web form that validates user input for a numbe
 Table of Contents
 
 <ul>
- <li><a href="url">Demo</a></li>
+ <li><a href="Demo">Demo</a></li>
  <li><a href="url">Features</a></li>
  <li><a href="url">Usage</a></li>
  <li><a href="url">Demo</a></li>
