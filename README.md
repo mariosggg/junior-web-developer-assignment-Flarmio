@@ -22,3 +22,8 @@ Features
    <li>Provides real-time validation feedback using JavaScript.</li>
    <li>Styled with CSS for a clean and responsive design.</li>
 </ul>
+
+<p></p>
+<p></p>
+Usage
+
