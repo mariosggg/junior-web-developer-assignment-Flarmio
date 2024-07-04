@@ -1,110 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number Input Validation</title>
-<style>
+    <meta charset="UTF-8"> <!-- Character encoding set to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper rendering on mobile devices -->
+    <title>Number Input Validation</title> <!-- Page title -->
+    <style>
         body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-            margin: 0;
+            font-family: Arial, sans-serif; /* Sets font style */
+            display: flex; /* Enables flexbox layout */
+            justify-content: center; /* Centers content horizontally */
+            align-items: center; /* Centers content vertically */
+            height: 100vh; /* Full viewport height */
+            background-color: #f0f0f0; /* Light grey background */
+            margin: 0; /* Removes default margin */
         }
         .container {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: left;
-            width: 400px;
-            position: relative;
+            background-color: #fff; /* White background for the form container */
+            padding: 40px; /* Padding inside the container */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+            text-align: left; /* Left-align text */
+            width: 400px; /* Fixed width for the container */
+            position: relative; /* Positioned relative to its normal position */
         }
         h1 {
-            color: #007bff;
-            font-size: 24px;
-            margin-bottom: 20px;
+            color: #1a77c9; /* Blue color for the heading */
+            font-size: 24px; /* Font size for the heading */
+            margin-bottom: 20px; /* Space below the heading */
         }
         label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: bold;
+            display: block; /* Labels are block elements */
+            margin-bottom: 10px; /* Space below each label */
+            font-weight: bold; /* Bold text for labels */
         }
         input {
             width: 100%; /* Full width input */
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #cccccc;
-            border-radius: 4px;
-            box-sizing: border-box; /* Ensure padding is included in width */
+            padding: 8px; /* Padding inside the input field */
+            margin-bottom: 10px; /* Space below the input */
+            border: 1px solid #cccccc; /* Light grey border */
+            border-radius: 4px; /* Rounded corners for the input */
+            box-sizing: border-box; /* Includes padding and border in the element's total width and height */
         }
         .error {
-            color: red;
-            display: none;
-            margin-bottom: 10px;
+            color: red; /* Red color for error message */
+            display: none; /* Hidden by default */
+            margin-bottom: 10px; /* Space below the error message */
         }
         .button {
-    border: 2px solid #007bff; /* Blue border */
-    color: #007bff; /* Blue text color */
-    background-color: #ffffff; /* White background color */
-    padding: 12px 24px; /* Smaller padding */
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 50%; /* Ensure button takes full width of container */
-    box-sizing: border-box; /* Ensure padding is included in width */
-}
-.button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    border-color: #0056b3; /* Darker blue border on hover */
-    color: #ffffff; /* White text color on hover */
-}
-
-    </style>
+            border: 2px solid #1a77c9; /* Blue border */
+            color: #1a77c9; /* Blue text color */
+            background-color: #ffffff; /* White background color */
+            padding: 5px 16px; /* Padding inside the button */
+            text-align: center; /* Centered text */
+            text-decoration: none; /* Removes underline from text */
+            display: inline-block; /* Inline-block element */
+            font-size: 14px; /* Font size for the button text */
+            border-radius: 8px; /* Rounded corners for the button */
+            cursor: pointer; /* Pointer cursor on hover */
+            height: 5%; /* Height of the button */
+            width: 20%; /* Width of the button */
+            box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+            margin-top: 10px; /* Space above the button */
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Form</h1>
+        <h1>Form</h1> <!-- Heading for the form -->
         <form id="numberForm">
-            <label for="numberInput">Number</label>
-            <input type="number" id="numberInput" name="numberInput" placeholder="Please enter a number">
-            <div class="error" id="error">Please enter a number greater than 10.</div>
-            <div style="display: flex; justify-content: flex-end;">
-                <button class="button button4">Submit</button>
-
+            <label for="numberInput">Number</label> <!-- Label for the number input -->
+            <input type="number" id="numberInput" name="numberInput" placeholder="Please enter a number"> <!-- Number input field -->
+            <div class="error" id="error">Please enter a number greater than 10.</div> <!-- Error message container -->
+            <div style="display: flex; justify-content: flex-end;"> <!-- Container for the submit button, right-aligned -->
+                <button class="button" type="submit">Submit</button> <!-- Submit button -->
             </div>
         </form>
     </div>
     <script>
+        // Wait for the DOM to fully load
         window.onload = function() {
-            const numberForm = document.getElementById('numberForm');
-            const numberInput = document.getElementById('numberInput');
-            const errorElement = document.getElementById('error');
+            const numberForm = document.getElementById('numberForm'); // Get the form element
+            const numberInput = document.getElementById('numberInput'); // Get the input element
+            const errorElement = document.getElementById('error'); // Get the error message element
 
+            // Add an event listener for form submission
             numberForm.addEventListener('submit', function(event) {
-                const inputValue = parseFloat(numberInput.value);
+                const inputValue = parseFloat(numberInput.value); // Parse the input value to a float
+                // Check if the input value is a number and less than or equal to 10
                 if (!isNaN(inputValue) && inputValue <= 10) {
-                    errorElement.style.display = 'block';
-                    event.preventDefault();
+                    errorElement.style.display = 'block'; // Show the error message
+                    event.preventDefault(); // Prevent form submission
                 } else {
-                    errorElement.style.display = 'none';
-                    alert('Form submitted successfully with number: ' + inputValue);
+                    errorElement.style.display = 'none'; // Hide the error message
+                    alert('Form submitted successfully with number: ' + inputValue); // Show success alert
                 }
             });
 
+            // Add an event listener for input changes
             numberInput.addEventListener('input', function() {
-                const inputValue = parseFloat(this.value);
+                const inputValue = parseFloat(this.value); // Parse the input value to a float
+                // Check if the input value is a number and less than or equal to 10
                 if (!isNaN(inputValue) && inputValue <= 10) {
-                    errorElement.style.display = 'block';
+                    errorElement.style.display = 'block'; // Show the error message
                 } else {
-                    errorElement.style.display = 'none';
+                    errorElement.style.display = 'none'; // Hide the error message
                 }
             });
         };
