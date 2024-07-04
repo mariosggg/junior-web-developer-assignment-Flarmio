@@ -33,5 +33,6 @@ Usage
  <li>Include the HTML: Copy the HTML structure provided in index.html to your project.</li>
   <li>Add CSS: Include the CSS styles from <style> tag or link to an external CSS file.</li>
   <li>Add CSS: Include the CSS styles from <style> tag or link to an external CSS file.</li>
+  <li>Customization: Modify styles (<style> section) and validation logic (<script> section) to fit your project requirements./li>
 </ol>
 
