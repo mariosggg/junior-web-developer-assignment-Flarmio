@@ -36,3 +36,8 @@ Usage
   <li>Customization: Modify styles (<style> section) and validation logic (<script> section) to fit your project requirements./li>
 </ol>
 
+<p></p>
+<p></p
+Installation 
+<p></p>
+<p></p>
