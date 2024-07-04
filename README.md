@@ -47,3 +47,7 @@ Installation
    cd your-repository </li>
   <li>Open index.html in your web browser or integrate it into your existing project.
 </ol>
+
+Contribution
+<p></p>
+<p></p>
