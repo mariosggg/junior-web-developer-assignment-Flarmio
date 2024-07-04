@@ -15,8 +15,6 @@ Table of Contents
  <li><a href="url">Contributing</li
  </ul>
  
- <p></p>
-
-Deni
+Demo
 
 You Can see A live demo <a href="https://mariosggg.github.io/junior-web-developer-assignment-Flarmio_marios_vardalachakis/">Here</a></li>
