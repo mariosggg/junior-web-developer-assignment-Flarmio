@@ -40,6 +40,7 @@ Installation
 <p></p>
 <p></p>
 <ol>
- <li>Clone the repository: git clone https://github.com/your-username/your-repository.git</li>
+ <li>Clone the repository:</li>
+   <img ![image](https://github.com/mariosggg/junior-web-developer-assignment-Flarmio_marios_vardalachakis/assets/47419196/da5d315f-8ab7-49f6-bf8e-cdcf9c92dc86) </img>
   <li>Navigate into the project directory:cd your-repository </li>
 </ol>
