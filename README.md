@@ -13,9 +13,9 @@ Table of Contents
  <li><a href="url">Demo</a></li>
  <li><a href="url">Installation</li>
  <li><a href="url">Contributing</li
-</ul>
+ </ul>
 
 
-Demo
+<p>Demo</p>
 
 You Can see A live demo here <a href="url">Here</a>
