@@ -8,6 +8,12 @@ Table of Contents
 
 <ul>
  <li><a href="url">Demo</a></li>
+ <li><a href="url">Features</a></li>
+ <li><a href="url">Usage</a></li>
+ <li><a href="url">Demo</a></li>
+ <li><a href="url">Installation</li>
+ <li><a href="url">Contributing</li>
+
 </ul>
 
 
