@@ -27,7 +27,7 @@ Features
 <p></p>
 <p></p>
 Usage
-<p></p>
+<p></p
 <p></p>
 <ol>
  <li>Include the HTML: Copy the HTML structure provided in index.html to your project.</li>
@@ -39,3 +39,7 @@ Usage
 Installation 
 <p></p>
 <p></p>
+<ol>
+ <li>Clone the repository: git clone https://github.com/your-username/your-repository.git</li>
+  <li>Navigate into the project directory:cd your-repository </li>
+</ol>
