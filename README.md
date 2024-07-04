@@ -18,6 +18,6 @@ Table of Contents
  <p></p>
 
 
-<p><b>Demo</b></p>
+<h1><b>Demo</h1></p>
 
 You Can see A live demo <a href="https://mariosggg.github.io/junior-web-developer-assignment-Flarmio_marios_vardalachakis/">Here</a></li>
